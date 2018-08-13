@@ -1,0 +1,65 @@
+// .mk-app-devtools {
+//     flex:1;
+    
+//     &-tabs {
+//         height: 37px;
+//         flex: 0 0 37px;
+//     }
+//     &-content {
+//         padding: 10px;
+//         display: flex;
+//         flex: 1;
+//         overflow: auto;
+//         &>ul {
+//             overflow: auto;
+//             flex: 1;
+//         }
+//     }
+
+//     .ant-tabs-nav .ant-tabs-tab{
+//         padding: 8px 16px;
+//     }
+// }
+
+.mk-app-adevice-details-widget {
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    flex-direction: row;
+    &-left {
+        width: 50%;
+        flex: 0 0 50%;
+        margin-right: 10px;
+    }
+    &-content {
+        flex: 1;
+        &-footer {
+            height: 58px;
+            flex: 0 0 58px;
+            justify-content: center;
+            align-items: flex-end;
+        }
+    }
+    .mk-card {
+        display: flex;
+        flex-direction: column;
+        .ant-card-head {
+            padding: 0 10px;
+            flex: 0 0 50px;
+            .mk-btn {
+                margin-right: 4px;
+            }
+        }
+        .ant-card-body {
+            padding: 4px;
+            flex:1;
+            display: flex;
+            flex-direction: column;
+        }
+    }
+
+    &-right {
+        width: 50%;
+        flex: 0 0 50%;
+    }
+}

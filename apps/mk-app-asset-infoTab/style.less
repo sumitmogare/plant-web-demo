@@ -1,0 +1,58 @@
+.mk-app-asset-infoTab {
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    flex-direction: row;
+    &-left {
+        width: 50%;
+        flex: 0 0 50%;
+        margin-right: 10px;
+    }
+    &-content {
+        flex: 1;
+        &-footer {
+            height: 58px;
+            flex: 0 0 58px;
+            justify-content: center;
+            align-items: flex-end;
+        }
+        &-timeline {
+            padding-top:10px;
+        }
+    }
+    .mk-card {
+        display: flex;
+        flex-direction: column;
+        .ant-card-head {
+            padding: 0 10px;
+            flex: 0 0 50px;
+            .mk-btn {
+                margin-right: 4px;
+            }
+        }
+        .ant-card-body {
+            padding: 4px;
+            flex:1;
+            display: flex;
+            flex-direction: column;
+        }
+    }
+}
+
+.mk-app-adevice-details-widget{
+    flex: 0 0 30px;
+	align-items: center;
+    border-color: #ccc;
+	&-top-left-label {
+	  font-size: 14px;
+	  color: #999;
+	}
+	&-top-left-value {
+	  font-size: 14px;
+      font-weight:bold;
+      margin-bottom: 5px;
+    }
+    &-header-right {
+        float:right;
+    }
+}

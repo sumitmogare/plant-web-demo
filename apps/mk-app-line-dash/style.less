@@ -1,0 +1,176 @@
+.mk-app-line-dash {
+	width: 100%;
+
+	&-overview {
+		height: 100px;
+		display: flex;
+		flex-direction: 'row';
+
+		.ant-card-body{
+			padding:10px;
+		}
+
+		.overviewDiv{
+			width:33%;
+			height:100%;
+			padding-left:10px;
+			padding-right:10px;
+		}
+
+		.upcomingBar{
+			width:5px;
+			background-color:blue;
+			margin-right:8px;
+		}
+		.completeBar{
+			width:5px;
+			background-color:green;
+			margin-right:8px;
+		}
+		.pastDueBar{
+			width:5px;
+			background-color:yellow;
+			margin-right:8px;
+		}
+
+		&-heading {
+			font-size: 13px;
+			color: black;
+			font-weight: 450;
+		}
+
+		.overview-value{
+			font-size: 20px;
+			color:black;
+			font-weight:470;
+		}
+	}
+
+	&-content {
+		height:60%;
+		width: 100%;
+		display:flex;
+		flex-direction: 'column';
+
+		.ant-card-head-title{
+			color: #b5b2b2;
+			font-size:18px;
+		}
+
+		.cardsTest {
+			width:100%;
+			padding-left:0px;
+			padding-top:0px;
+			padding-right:0px;
+			padding-bottom:15px;
+		
+			&-headerText {
+				font-size: 15px;
+				color: #aaa;
+				font-weight: 400;
+			}
+			&-mainValue {
+				left: 0px;
+				font-size: 21px;
+				font-weight: 400;
+				color: #222;
+				&-schedule {
+					position: relative;
+					font-size: 16px;
+					font-weight: 450;
+					left: 150px;
+				}
+
+				&-condition {
+					position: relative;
+					font-size: 16px;
+					font-weight: 450;
+					left: 150px;
+				}
+			}
+			&-mainContent {
+				flex-direction:row;
+			}
+		
+			&-units{
+				margin-left: 5px;
+				font-size: 14px;
+				font-weight: 400;
+				color: rgb(24, 23, 23);
+			}
+		
+			.ant-progress{
+				width: 100%;
+				margin-top: 10px;
+				font-size: 10px;
+			}
+			.ant-progress-inner{
+				background: #dbd6d6;
+			}
+			// .ant-progress-bg{
+			// 	height: 4px !important;
+			// }
+		
+			.error {
+				& > span{
+					color: @error-color  
+				}
+		
+				.ant-progress-bg{
+					background-color: @error-color  
+				}
+			}
+		
+			.warning {
+				& > span{
+					color: @warning-color  
+				}
+		
+				.ant-progress-bg{
+					background-color: @warning-color  
+				}
+			}
+		
+			.normal {
+				& > span{
+					color: #cfefdf
+				}
+		
+				.ant-progress-bg{
+					background-color: #cfefdf
+				}
+			}
+		
+			.good {
+				& > span{
+					color: @softly-color
+				}
+		
+				.ant-progress-bg{
+					background-color: @softly-color
+				}
+			}
+		
+			.success {
+				& > span{
+					color: @success-color
+				}
+		
+				.ant-progress-bg{
+					background-color: @success-color
+				}
+			}
+		
+		}
+	}
+
+	.ant-card {
+		padding: 5px;
+		margin: 5px;
+	}
+}
+
+
+
+
+
